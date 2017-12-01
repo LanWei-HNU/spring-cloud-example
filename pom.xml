@@ -10,6 +10,8 @@
 	<modules>
 		<module>eureka-server</module>
 		<module>eureka-client-example</module>
+		<module>service-feign</module>
+		<module>zuul-gateway</module>
 	</modules>
 
 	<properties>
