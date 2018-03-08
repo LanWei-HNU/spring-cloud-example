@@ -34,8 +34,7 @@ public class PreFilter extends ZuulFilter {
 		 RequestContext ctx = RequestContext.getCurrentContext();
 		 HttpServletRequest request = ctx.getRequest();
 		 logger.info("request:{}", request);
-		 String ipAddress = ctx.getRequest().getHeader("Host");
-//		 String ipAddress = ctx.getRequest().getHeader("x-ip-address");
+		 String ipAddress = ctx.getRequest().getHeader("x-ip-address");
 		 logger.info("ipAddress:{}", ipAddress);
 		return null;
 	}
